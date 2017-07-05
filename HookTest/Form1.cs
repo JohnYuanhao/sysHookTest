@@ -102,7 +102,7 @@ namespace HookTest
         /// </summary>
         void hook_KeyDown(object sender, KeyEventArgs e)
         {
-          
+            lbKeyState.Text = "键盘按下, " + e.KeyData.ToString() + " 键码:" + e.KeyValue;
         }
     }
 }
